@@ -86,6 +86,21 @@
       "react-app"
     ]
   },
+  "proxy": {
+    "^/api": {
+      "target": "http://localhost:8000"
+    },
+    "^/login": {
+      "target": "http://localhost:8000"
+    },
+    "^/static/images": {
+      "target": "http://localhost:8000"
+    },
+    "^/queues": {
+      "target": "http://localhost:8000"
+    }
+  },
+  "homepage": ".",
   "eslintConfig": {
     "extends": "react-app"
   }
